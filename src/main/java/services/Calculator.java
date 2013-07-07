@@ -16,4 +16,15 @@ public class Calculator {
     	int result = a + b;
         return Integer.toString(result);
     }
+
+    @GET
+    @Path("subtract")
+    public String subtract(@QueryParam("a")int a, @QueryParam("b")int b){
+    	int result = a - b;
+        return Integer.toString(result);
+    }
+
+
 }
+
+
